@@ -1,0 +1,146 @@
+/* font-family: "Londrina Solid", serif; */
+/* font-family: "Inter", serif; */
+
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 130px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.container{
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Londrina Solid", serif;
+    font-size: 7rem;
+    color: #6f6852;
+    margin-bottom: 0;
+}
+
+.button{
+    font-family: "Inter", serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 400px;
+    margin-top: 20px;
+    color: #fcf5db;
+    background-color: #6f6852;
+    border: none;
+    height: 55px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover{
+    color: #6f6852;
+    background-color: #fcf5db;
+    border:  1px solid #6f6852;
+}
+
+.forgetinformation{
+    width: 355px;
+    height: 55px;
+}
+
+input[type="text"]{
+    all: unset;
+    font-family: "Inter", serif;
+    font-size: 1.4rem;
+    width: 270px;
+    color: #b5b38e;
+    background-color: #fcf5db;
+    border: none;
+    height: 55px;
+    border-radius: 30px;
+    padding-left: 12px;
+}
+
+input[type="text"]::placeholder {
+    color: #b5b38e;
+}
+
+input[type="submit"]{
+    font-family: "Inter", serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 55px;
+    height: 55px;
+    color: #b5b38e;
+    background-color: #fcf5db;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input[type="submit"]:hover{
+    color: #fcf5db;
+    background-color: #b5b38e;
+}
+
+.answer{
+    font-family: "Inter", serif;
+    font-size: 1.4rem;
+    width: 340px;
+    height: auto;
+    color: #b5b38e;
+    background-color: #fcf5db;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    max-width: 335px;
+    overflow-wrap: normal;
+    white-space: normal;
+}
+
+h2{
+    font-family: "Londrina Solid", serif;
+    font-size: 4rem;
+    color: #6f6852;
+    margin-bottom: 20px;
+    width: 335px;
+}
+
+.backtohome{
+    background-color: #6f6852;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.backtohome:hover{
+    background-color: #b5b38e;
+}
+
+@media (max-width: 650px) {
+body{
+    justify-content: center;
+    padding-left: 0;
+    background-position: left;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+.button{
+    width: 350px;
+}
+}
