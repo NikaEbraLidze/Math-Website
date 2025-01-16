@@ -23,7 +23,7 @@
         <div class="forgetinformation">
             <form id="factNumbers" method="post">
                 <input type="text" id="num" name="num" placeholder="Enter a number.">
-                <input id="facts" type="submit" value="Ok" formaction="/facts">
+                <input id="numb" type="submit" value="Ok" formaction="<%= formAction %>">
             </form>
         </div>
         <p class="answer"><%= answer %></p>
@@ -35,6 +35,5 @@
         </button>
      </div>
 
-     <script src="./index.js" charset="UTF-8"></script>
 </body>
 </html>

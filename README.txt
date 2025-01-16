@@ -1,3 +1,1 @@
-I created this site to learn and master the API.
-I replaced the html file with ejs files and made the website static. After that I am going to add features.
-You can now run the site on the live server (3000). you need to use "npm init" in command line. We will connect to the server later.
+This is the final look of the project. I tried to explain as briefly and in detail as possible what is happening in the index.js file. Only the numbers and facts section is not working because access to that part of the server is paid, and everything else works perfectly.
