@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import express from "express";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const APIurl = "https://api.math.tools";//This is the server link.
 
 app.use(express.static("public"));
@@ -33,7 +33,7 @@ app.post("/answerf", async (req, res) => {//Facts about numbers doesn't work bec
 
         res.render("numbers.ejs", { heading: "Facts about numbers", answer: `${result.contents.fact}` , formAction: "/answerf" });
     } catch (error) {
-        res.status(404).send(error.message);
+        res.render("numbers.ejs", { heading: "Sorry it's paid and doesn' work!", answer: `Undefined` , formAction: "/answerf" });
         console.log(error.response?.data || "No response data");
     }
 });//I made a separate post request for each section where I could store the number entered by the user and also return the answer. I easily accessed the server with the following link and we got to the answer.
